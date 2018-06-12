@@ -1,0 +1,146 @@
+<!-- Doctype tells the browser how this thing should be processed. -->
+<!DOCTYPE html>
+<html>
+	<!-- Head tag is where most of the stuff the user doesn't need to see goes.
+	I.e, css, js, meta tags, etc.
+ 	-->	
+ 	<head>
+		<title>Basic HTML</title>
+		<style>
+			/*tag = red*/
+			/*.class = green*/
+			/*#id = green*/ 
+			/*Id is totally unique. One id per page. Can have as many classes as you want.*/
+			body{
+				color:red;
+			}
+			.center{
+				text-align:cen
+			}
+			table tbody tr td{
+				color:blue;
+			}
+		</style>
+	</head>
+
+	<!-- If it's green, it's an attribute -->
+	<body id="" class="" ref="" style="
+	background: white">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		<div class="center">
+			Center the text
+		</div>
+
+
+		<form action="" method="">
+			<input type="text" />
+			<input type="password" />
+			<input type="email" />
+			<input type="number" />
+			<input type="date" />
+			<textarea></textarea>
+			<select></select>
+		</form>
+
+		<!-- All the stuff the user is supposed to see -->
+
+		<!-- This is a path that says, I don't care what website I'm on, I'll just tell you how to get there -->
+		<!--An abosulte path is one that starts with http, a relative path is a path relative to where you already are -->
+
+		<!-- Inline = content that makes the web. Stuff like:
+		text.
+		images.
+		videos.
+		Inline element will take up as much space as it needs to... unless told otherwise.
+		They do not start new lines. 
+
+		Block level elements are usually stuff that people don't see.
+		ie., div,
+		block elements start new lines... or take up 100% of the space available -->
+
+		<div style="width:100px; height:100px; border:black 1px solid">
+			Flower
+		</div>
+
+		<table border=1>
+			<thread>
+				<!-- A table is organized by:
+				tr = row
+				inside of rows are td = columns -->
+				<tr>
+					<th class="table-head">Name <span>Player</span></th>
+					<th>City</th>
+				</tr>
+			</thread>
+			<tbody>
+				<tr>
+					<td>Jordan</td>
+					<td>Chicago</td>
+				</tr>
+				<tr>
+					<td>Kobe</td>
+					<td>LA</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img width="100" src="https://i.imgur.com/ZkCaZyR.jpg" />
+
+		<br/>
+
+		<a href="http://www.espn.com" target="_blank">
+			This is an anchor tag.
+		</a>
+
+		<br/>
+		<!-- This is a phone number -->
+		<a href="tel:15555555555">555</a>
+		<!-- This is a mail client to email the address -->
+		<a href="mailto:rob@syntelinc.com">Email me</a>
+
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<ul>
+				<li>Sub item 1</li>
+				<li>Sub item 2</li>
+			</ul>
+		</ol>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+		</ul>
+
+		<h1>I'm an H1
+		<br/>
+		<hr/>
+		!!!
+		</h1>
+		<h2>I'm an H2</h2>
+		<h6>I'm an H6</h6>
+
+		<strong>I change what's inside me
+		</strong>	
+		<em>Italics</em>
+		<blockquote>Strike!</blockquote>
+
+		<div>
+			I am a structural tag
+		</div>
+
+
+		<p>I'm a p tag</p>
+
+	</body>
+
+</html>
+

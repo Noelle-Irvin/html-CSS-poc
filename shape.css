@@ -1,0 +1,114 @@
+body{
+	background-color: white;
+}
+.container{
+	text-align:center;
+	background-color: skyblue;
+	top: 100px;
+	position: relative;
+	width:100%;
+}
+.wheel{
+	background-color: black;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	display: inline-block;
+	position:relative;
+	z-index: 2;
+}
+.space{
+	background-color: skyblue;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+.roof{
+	background-color: pink;
+	width:400px;
+	height:200px;
+	border-radius: 200px/100px;
+	margin:auto;
+	z-index:1;
+}
+.container2{
+	text-align:center;
+	background-color: skyblue;
+	top: 175px;
+	width:100%;
+	position: absolute;
+	z-index: 0;
+}
+.car-base{
+	width:300px;
+	height:150px;
+	background-color: pink;
+	margin:auto;
+}
+.trunk{
+	width:300px;
+	height:150px;
+	border-radius: 150px/75px;
+	position: absolute;
+	left:30%;
+	bottom:2%;
+	background-color: pink;
+}
+.front{
+	width:300px;
+	height:150px;
+	border-radius: 150px/75px;
+	position: absolute;
+	left:49%;
+	bottom:0%;
+	background-color: pink;
+}
+.bigwindow{
+	margin:auto;
+	position: relative;
+	bottom:35px;
+}
+.triangle-window{
+	width: 0; 
+	height: 0; 
+	border-bottom: 50px solid white; 
+	border-left: 75px solid transparent;
+	display: inline-block;
+	bottom:200px;
+	position:relative;
+	z-index: 2;
+	
+}
+.window{
+	background-color: white;
+	width:40px;
+	height:50px;
+	bottom: 200px;
+	display: inline-block;
+	position:relative;
+	z-index: 2;
+	margin-rigth:10px;
+}
+.window1{
+	background-color: white;
+	width:40px;
+	height:50px;
+	bottom: 200px;
+	display: inline-block;
+	position:relative;
+	z-index: 2;
+	margin-left:10px;
+}
+.triangle2-window{
+	width: 0; 
+	height: 0; 
+	border-bottom: 50px solid white; 
+	border-right: 75px solid transparent;
+	display: inline-block;
+	bottom:200px;
+	position:relative;
+	z-index: 2;
+	
+}

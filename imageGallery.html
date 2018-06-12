@@ -3,14 +3,27 @@
 <head>
 	<!-- title used by the browser tab system and all the SEO stuff -->
 	<title>Places to visit in Georgia!</title>
-
+	
 	<style>
 		#gallery-wrapper{
 			text-align:center;
 		}
+		#middle-section{
+			float:left;
+			width: 250px;
+			margin: 0px 10px 20px 100px;
+		}
+		#bottom-section{
+			float:right;
+			margin: 0px 100px 20px 10px;
+		}
 		/*Styles will go here*/
+		/*#fb-like{
+			float: right;
+			
+		}*/
 		.thumb{
-			width: 15%;
+			width: 100%;
 			/*margin-left: 10px;
 			margin-right: 10px;*/
 			/*2 numbers = 1st: top and bottom
@@ -19,34 +32,54 @@
 			/*3 numbers= 1st: top, 2nd: left and right, 3rd: bottom*/
 			/*margin: 0px 100px 10px;*/
 			/*4 numbers = top, right, bottom, left */
-			margin: 0px 10px 20px 10px;
+			/*margin: 0px 10px 0px 10px;*/
 		}
 		img{
-			width: 1000px;
+			width: 750px;
+		}
+		#caption{
+			margin: 0px 10px 20px;
 		}
 	</style>
 
 </head>
 
 <body>
+	
 	<!-- A wrapper for the entire gallery -->
 	<!-- A div does nothing other than help us organize the layout of our page -->
 	<div id="gallery-wrapper">
 		<div id="top-section">
 			<h1>A photo gallery made with HTML, JS, and CSS. And a whole lot of love.</h1>
 		</div>
+		<div id="bottom-section">
+			<img src="./ga_pics/prov_state_canyon.jpg" name="bigPic"/>
+			
+<div id="fb-like">
+	<br/>
+			<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FgreenhousekidsGNV%2F&width=63&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId" width="63" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		</div>
+
 		<div id="middle-section">
 			<!-- <h1>Middle Section</h1>			 -->
 			<img class="thumb" src="./ga_pics/arabia_mnt.jpg" onClick="bigPic.src = this.src"/>
+			<div id="caption">Arabia</div>
 			<img class="thumb" src="./ga_pics/callaway_gardens.jpg" onClick="bigPic.src = this.src"/>
+			<div id="caption">Callaway Gardens</div>
 			<img class="thumb" src="./ga_pics/Etowah_Indian_mounds.jpg" onClick="bigPic.src = this.src"/>
+			<div id="caption">Etowah Indian Mounds</div>
 			<img class="thumb" src="./ga_pics/prov_state_canyon.jpg" onClick="bigPic.src = this.src"/>
+			<div id="caption">Prov State Canyon</div>
 			<img class="thumb" src="./ga_pics/wormsloe.jpg" onClick="bigPic.src = this.src"/>
+			<div id="caption">Wormsloe</div>
 		</div>
-		<div id="bottom-section">
-			<img src="./ga_pics/prov_state_canyon.jpg" name="bigPic"/>
-		</div>
+
+		
+		
+		
 	</div>
+
 
 </body>
 </html>
